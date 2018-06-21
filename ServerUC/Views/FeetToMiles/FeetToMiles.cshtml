@@ -3,52 +3,21 @@
     ViewData["Title"] = "FeetToMiles";
 }
 
-
-    <div class="topnav">
-        <a href="index.html">Feet to Miles</a>
-        <a href="C to F.html">Celsius to Fahrenheit</a>
-        <a href="feetInches.html">Feet to Inches</a>
-        <a href="base.html">Base to Base</a>
-        <a href="centimeterToMeter.html">Centimeter to Meter</a>
-    </div>
     <div class="header darkBlue">
         Feet to Miles
     </div>
     <div id="app">
         <br />
-        <form action="Converter" method="post">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-3 col-2 bgBlue shadow-lg p-3 mb-5 rounded">
-                        <div class="row">
-                            <div class="col-6">
-                                <p> Feet:<div><input name="Feet" class="input lineBoarder" type="number" /></div></p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <p>Miles:   <div class="output lineBoarder" />@Model
-                            </div></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="offset-2 col-2 bgBlue shadow-lg p-3 mb-5 rounded">
-                    <div class="row">
-                        <div class="col-6">
-                            <p>Miles:<div><input name="Miles" class="input lineBoarder" type="number" /></div></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <p>Feet: <div class="output lineBoarder">@Model</div></p>
-                        </div>
-                    </div>
-                </div>
+        <form action="SayHello" method="post">
+            <div class="jumbotron">
+                <p>Feet: <div><input name="Feet" class="input lineBoarder" type="number" /></div></p>
+                <p>Miles: <div class="output lineBoarder" />@Model</p>
+                <p>Miles: <div><input name="Miles" class="input lineBoarder" typer="number" /></div></p>
+                <p>Feet: <div class="output lineBoarder" />@Model</p>
+                <input name="submit" type="submit" />
             </div>
-    </div>
-    <div class="centerize">
-        <br />
-        <button name="submit" type="submit" class="buttonB medBlue">Convert</button>
-    </div>
-    </div>
-    </form>
+            </form>
+            <p>
+                @Model
+            </p>
+
