@@ -34,6 +34,7 @@ namespace ServerUC.Controllers
                 Feetconvert = (Miles) * 5280;
                 return View(viewName: "FeetToMiles", model: (Feetconvert));
             }
+            return View(viewName: "FeetToMiles", model: "Out of bounds Error");
         }
     }
 }
