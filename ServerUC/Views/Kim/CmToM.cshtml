@@ -1,0 +1,17 @@
+﻿@model double
+@{
+    ViewData["Title"] = "CmToM";
+}
+
+<h2>Centimeters To Meters</h2>
+<br />
+<div>
+    <form action="convert" method="post">
+        <p>Meters: <input name="centimeter" type="number" step="any" /></p>
+        <input name="submit" type="submit" />
+    </form>
+    <p>
+        Meters : @Model
+    </p>
+</div>
+
