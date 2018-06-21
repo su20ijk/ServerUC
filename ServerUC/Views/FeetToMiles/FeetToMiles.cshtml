@@ -3,14 +3,7 @@
     ViewData["Title"] = "FeetToMiles";
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Feet to Miles</title>
 
-</head>
-<body>
     <div class="topnav">
         <a href="index.html">Feet to Miles</a>
         <a href="C to F.html">Celsius to Fahrenheit</a>
@@ -23,42 +16,39 @@
     </div>
     <div id="app">
         <br />
-        <div class="container">
-            <div class="row">
-                <div class="offset-3 col-2 bgBlue shadow-lg p-3 mb-5 rounded">
+        <form action="Converter" method="post">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-3 col-2 bgBlue shadow-lg p-3 mb-5 rounded">
+                        <div class="row">
+                            <div class="col-6">
+                                <p> Feet:<div><input name="Feet" class="input lineBoarder" type="number" /></div></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Miles:   <div class="output lineBoarder" />@Model
+                            </div></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-2 col-2 bgBlue shadow-lg p-3 mb-5 rounded">
                     <div class="row">
                         <div class="col-6">
-                            <p> Feet:<div><input v-model="Feet" class="input lineBoarder" type="number" v-on:change="" /></div></p>
+                            <p>Miles:<div><input name="Miles" class="input lineBoarder" type="number" /></div></p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-6">
-                            <p>Miles:   <div class="output lineBoarder" />{{Milesconvert}}
-                        </div></p>
+                            <p>Feet: <div class="output lineBoarder">@Model</div></p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="offset-2 col-2 bgBlue shadow-lg p-3 mb-5 rounded">
-                <div class="row">
-                    <div class="col-6">
-                        <p>Miles:<div><input v-model="Miles" class="input lineBoarder" type="number" v-on:change="" /></div></p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <p>Feet: <div class="output lineBoarder">{{Feetconvert}}</div></p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <div class="centerize">
         <br />
-        <button v-on:click="buttonClicked" class="buttonB medBlue">Convert</button>
+        <button name="submit" type="submit" class="buttonB medBlue">Convert</button>
     </div>
     </div>
-</body>
-</html>
-<script>
-
-</script>
+    </form>
