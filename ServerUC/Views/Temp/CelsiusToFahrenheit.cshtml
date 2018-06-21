@@ -1,0 +1,15 @@
+﻿@model double
+@{
+    ViewBag.Title = "CelsiusToFahrenheit";
+}
+
+<h2>CelsiusToFahrenheit</h2>
+
+<div>
+    <form action="CtoF" method="post">
+        <p>Celsius: <input name="inputC" type="number" step="any"/></p>
+        <input name="submit" type="submit" />
+    </form>
+    <p>Fahrenheit: @Model</p>
+
+</div>
